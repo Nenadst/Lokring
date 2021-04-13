@@ -1,0 +1,75 @@
+.similar {
+  padding: 2.5rem 0;
+  background-color: $color-white-smoke;
+
+  &__container {
+    width: 50%;
+    margin: 0 auto;
+
+    @include breakpoint(xl) {
+      width: 53%;
+    }
+
+    @include breakpoint(lg) {
+      width: 70%;
+    }
+
+    @include breakpoint(md) {
+      width: 100%;
+    }
+    @include breakpoint(sm) {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__heading-box {
+    margin-bottom: 1.5rem;
+    color: $color-gray;
+
+    @include breakpoint(sm) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(9, 1fr);
+      width: 100%;
+    }
+  }
+
+  &__btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: $color-tangerine;
+    border: 1px solid $color-tangerine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.2rem;
+    transition: all 0.3s ease-in-out;
+
+    @include breakpoint(sm) {
+      margin-bottom: 1.5rem;
+    }
+
+    &:hover {
+      background-color: rgba($color-tangerine, 0.1);
+    }
+  }
+
+  &__svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: $color-tangerine;
+  }
+}

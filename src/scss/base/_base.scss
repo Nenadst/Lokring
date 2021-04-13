@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html {
+  font-size: 10px !important;
+  font-family: $ff-sans;
+}
+
+body {
+  font-size: 1.6rem !important;
+}
+
+main {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+label {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+figure img {
+  display: block;
+}
+
+body figure {
+  overflow: hidden;
+}

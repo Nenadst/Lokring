@@ -1,0 +1,254 @@
+.footer {
+  padding-top: 2.5rem;
+  background-color: $color-dark-cerulean;
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5rem;
+    margin-bottom: 2.5rem;
+
+    @include breakpoint(sm) {
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+
+  &__paragraph {
+    font-size: 1.4rem;
+    color: $color-white;
+    margin-right: 4rem;
+    margin-left: 1.5rem;
+
+    @include breakpoint(md) {
+      font-size: 1.2rem;
+    }
+
+    @include breakpoint(sm) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__input {
+    outline: none;
+    padding: 0.9rem 1.4rem;
+    min-width: 36.5rem;
+
+    @include breakpoint(sm) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    background-color: $color-alice-blue;
+    color: $color-dark-cerulean;
+    padding: 0.9rem 2.5rem;
+    margin-left: 0.2rems;
+
+    @include breakpoint(sm) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__heading-box {
+    margin-bottom: 2rem;
+
+    @include breakpoint(md) {
+      margin-bottom: 5rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: $color-swan;
+  }
+
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(lg) {
+      justify-content: space-between;
+    }
+
+    @include breakpoint(md) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(md) {
+      flex: 0 0 50%;
+      text-align: center;
+      margin-bottom: 5rem;
+      align-items: center;
+    }
+
+    @include breakpoint(sm) {
+      flex: 0 0 100%;
+      align-items: center;
+    }
+  }
+
+  &__location {
+    display: flex;
+    margin-bottom: 1.2rem;
+  }
+
+  &__svg {
+    height: 1.8rem;
+    width: 2rem;
+    fill: $color-white;
+    margin-right: 1rem;
+  }
+
+  &__text {
+    color: $color-white;
+    font-size: 1.6rem;
+
+    @include breakpoint(lg) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__phone {
+    display: flex;
+    margin-bottom: 1.2rem;
+  }
+
+  &__mail-box {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  &__mail {
+    color: $color-white;
+
+    @include breakpoint(lg) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__item {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $color-swan;
+    margin-bottom: 1.8rem;
+
+    @include breakpoint(lg) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $color-swan;
+    margin-bottom: 1.8rem;
+
+    @include breakpoint(lg) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__link-box {
+    padding-left: 1.7rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $color-white;
+    margin-bottom: 1rem;
+  }
+
+  &__banks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include breakpoint(md) {
+      align-items: center;
+    }
+  }
+
+  &__img {
+    margin-bottom: 1.2rem;
+  }
+
+  &__social-box {
+    display: flex;
+  }
+
+  &__social-link {
+    margin-right: 1rem;
+  }
+
+  &__social-svg {
+    height: 3.2rem;
+    width: 3.2rem;
+    fill: $color-dodger;
+  }
+
+  &__bottom {
+    background-color: $color-black;
+    margin-top: 2.5rem;
+    padding: 1rem 0 1.5rem;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 12rem 1.5rem 12rem;
+    flex-wrap: wrap;
+    @include breakpoint(md) {
+      margin: 0;
+      margin-bottom: 1rem;
+      justify-content: space-between;
+    }
+  }
+
+  &__bottom-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: $color-gray;
+
+    @include breakpoint(md) {
+      font-size: 1.2rem;
+    }
+
+    @include breakpoint(sm) {
+      flex: 0 0 33%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__copyright-text {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: $color-gray;
+  }
+}

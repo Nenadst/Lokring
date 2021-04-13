@@ -1,0 +1,212 @@
+.header {
+  padding-top: 1.5rem;
+  border-bottom: 2px solid $color-dark-cerulean;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+
+    @include breakpoint(lg) {
+      padding: 0 2.5rem 0 1.5rem;
+    }
+    @include breakpoint(md) {
+      padding: 0;
+    }
+  }
+
+  &__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 41%;
+  }
+
+  &__socail-box {
+    display: flex;
+  }
+
+  &__svg-social {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-social;
+  }
+
+  &__social-link {
+    text-decoration: none;
+    margin-right: 1.5rem;
+  }
+
+  &__search-box {
+    display: flex;
+  }
+
+  &__search-btn {
+    border: none;
+    background-color: transparent;
+    margin-right: 2rem;
+  }
+
+  &__svg-search {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: $color-gray;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__input {
+    border: none;
+    border-bottom: 2px solid $color-gray;
+    width: 100%;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex: 0 0 32%;
+  }
+
+  &__btn-box-top {
+    display: flex;
+    justify-content: space-between;
+    width: 71%;
+  }
+
+  &__btn-top {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $color-green;
+      border-bottom: 1px solid $color-green;
+    }
+  }
+
+  &__btn-box-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+
+    @include breakpoint(lg) {
+      width: 100%;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
+  }
+
+  &__btn-bottom {
+    text-decoration: none;
+    color: $color-black;
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+
+    @include breakpoint(lg) {
+      margin-bottom: 0.3rem;
+    }
+
+    &:hover {
+      color: $color-orange;
+    }
+    &:hover .header__svg-cart {
+      fill: $color-orange;
+    }
+    &:hover .header__svg-star {
+      fill: $color-orange;
+    }
+  }
+
+  &__btn-login {
+    text-decoration: none;
+    color: $color-black;
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $color-cyan;
+    }
+  }
+
+  &__breadcrumb {
+    display: flex;
+  }
+
+  &__slash {
+    margin: 0 0.5rem;
+  }
+
+  &__svg-cart {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: 0.7rem;
+    transition: all 0.3s ease-in-out;
+
+    &--black {
+      fill: $color-black;
+    }
+
+    &--orange {
+      fill: $color-tangerine;
+    }
+  }
+
+  &__svg-star {
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-left: 1rem;
+    transition: all 0.3s ease-in-out;
+
+    &--black {
+      fill: $color-black;
+    }
+
+    &--orange {
+      fill: $color-tangerine;
+    }
+  }
+
+  &__number {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.2rem;
+    transform: translate(50%, -50%);
+  }
+
+  &__nav-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__hamburger {
+    display: none;
+
+    @include breakpoint(md) {
+      display: block;
+      align-self: flex-end;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__hamburger-icon {
+    height: 3.5rem;
+    width: 5.5rem;
+    fill: $color-cyan;
+  }
+}

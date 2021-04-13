@@ -1,0 +1,406 @@
+.product {
+  padding-top: 2.8rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(md) {
+      flex-direction: column;
+    }
+  }
+
+  &__img-box {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 48%;
+    margin-bottom: 1.5rem;
+  }
+
+  &__img-left-box {
+    flex: 0 0 28%;
+  }
+
+  &__img-pic-left {
+    margin-bottom: 2rem;
+    border: 1px solid $color-gainsboro;
+    padding: 4rem 0;
+  }
+
+  &__img-right-box {
+    flex: 0 0 68%;
+  }
+
+  &__img-pic-right {
+    border: 1px solid $color-gainsboro;
+    height: 100%;
+    position: relative;
+    padding: 13rem 0;
+
+    @include breakpoint(lg) {
+      padding: 18rem 0;
+    }
+  }
+
+  &__img-big {
+    height: 100%;
+  }
+
+  &__svg-expand-link {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:hover .product__svg-expand {
+      fill: $color-swan;
+    }
+  }
+
+  &__svg-expand {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: $color-gainsboro;
+  }
+
+  &__svg-star-link {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__svg-star {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: $color-tangerine;
+  }
+
+  &__desc-box {
+    border: 1px solid $color-gainsboro;
+    flex: 0 0 50%;
+    margin-bottom: 1.5rem;
+  }
+
+  &__heading-box {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-gainsboro;
+    padding: 3rem 1.5rem 1.2rem 1.5rem;
+  }
+
+  &__heading-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+  }
+
+  &__heading-small {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+
+  &__heading-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  &__banner {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: $color-white;
+    background-color: $color-magenta;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: 0;
+    right: -13%;
+  }
+
+  &__price-small {
+    font-size: 1.4rem;
+    color: $color-gray;
+    text-decoration: line-through;
+    margin-bottom: 0.5rem;
+  }
+
+  &__price-big {
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid $color-gainsboro;
+    padding: 2.2rem 1.7rem 2rem 1.7rem;
+  }
+
+  &__input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__label {
+    color: $color-gainsboro;
+    margin-right: 1.3rem;
+    cursor: default;
+  }
+
+  &__input {
+    border: 1px solid $color-gainsboro;
+    padding: 0.6rem;
+    text-align: right;
+    width: 5.5rem;
+  }
+
+  &__input::-webkit-outer-spin-button,
+  &__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &__input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  &__arrow-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $color-gainsboro;
+  }
+
+  &__svg-arrow {
+    height: 1.3rem;
+    width: 1.5rem;
+    fill: $color-gainsboro;
+    padding: 0.2rem;
+  }
+
+  &__btn-cart {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $color-tangerine;
+    border: 1px solid $color-tangerine;
+    padding: 0.4rem 2.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-tangerine;
+    }
+
+    &:hover .product__svg-cart {
+      fill: $color-white;
+    }
+  }
+
+  &__svg-cart {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-tangerine;
+    margin-left: 1rem;
+  }
+
+  &__arrow-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: $color-gray;
+    }
+  }
+
+  &__arrow-link-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $color-gainsboro;
+
+    &:hover {
+      background-color: $color-gray;
+    }
+  }
+
+  &__price-box {
+    padding: 1.5rem 1.7rem 1.5rem 1.7rem;
+    border-bottom: 1px solid $color-gainsboro;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__price-text {
+    text-transform: uppercase;
+    color: $color-gray;
+  }
+
+  &__price {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  &__btn-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.8rem 1.7rem 1.8rem 1.7rem;
+    border-bottom: 1px solid $color-gainsboro;
+  }
+
+  &__btn-big {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: $color-dark-cerulean;
+    border: 1px solid $color-dark-cerulean;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-dark-cerulean;
+    }
+
+    &:hover .product__svg-double,
+    &:hover .product__svg-wallet {
+      fill: $color-white;
+    }
+  }
+
+  &__svg-double {
+    height: 0.9rem;
+    width: 1.2rem;
+    fill: $color-dark-cerulean;
+    margin-right: 1rem;
+  }
+
+  &__svg-wallet {
+    height: 1.7rem;
+    width: 1.7rem;
+    fill: $color-dark-cerulean;
+    margin-left: 1rem;
+  }
+
+  &__operations {
+    padding: 1.7rem;
+  }
+
+  &__operations-tab-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__operations-tab {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    width: 30%;
+    background-color: $color-white;
+    border: none;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      border-bottom: 2px solid $color-dark-cerulean;
+    }
+
+    &--active {
+      font-weight: bold;
+      border-bottom: 2px solid $color-dark-cerulean;
+    }
+  }
+
+  &__operations-content {
+    display: none;
+    font-size: 1.4rem;
+    padding-top: 1.5rem;
+
+    &--active {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__btn-bottom {
+    display: flex;
+    justify-content: center;
+    width: 47.5%;
+    margin-left: 0.5rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 1px solid $color-gainsboro;
+
+    @include breakpoint(lg) {
+      justify-content: flex-end;
+    }
+  }
+
+  &__btn-pdf {
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin-left: 2.5rem;
+    color: $color-black;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $color-dodger;
+      border-bottom: 1px solid $color-dodger;
+    }
+
+    &:hover .product__svg-pdf {
+      fill: $color-dodger;
+    }
+  }
+
+  &__svg-pdf {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 0.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__social-box {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem 0;
+    width: 48%;
+  }
+
+  &__svg-social {
+    height: 2.3rem;
+    width: 2.3rem;
+    fill: $color-dodger;
+    margin-left: 2rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      fill: $color-dark-cerulean;
+    }
+  }
+}

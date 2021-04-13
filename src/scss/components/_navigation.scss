@@ -1,0 +1,86 @@
+.nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    @include breakpoint(md) {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+
+    @include breakpoint(lg) {
+      flex-basis: 35%;
+      justify-content: center;
+    }
+
+    @include breakpoint(md) {
+      margin-left: 0;
+      background-color: $color-cyan;
+      width: 100%;
+      flex-direction: column;
+      border-bottom: 1px solid $color-white;
+      padding: 0.5rem 0;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-black;
+    padding: 0.8rem 0;
+    transition: all 0.3s ease-in-out;
+
+    @include breakpoint(lg) {
+      text-align: center;
+    }
+
+    @include breakpoint(md) {
+      width: 100%;
+      border-bottom: none;
+      color: $color-white;
+      justify-content: center;
+    }
+
+    &:hover {
+      color: $color-cyan;
+    }
+  }
+
+  &__active {
+    @include breakpoint(md) {
+      display: flex;
+    }
+  }
+
+  &__dropdown-content {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2.5rem 1rem 2.5rem;
+  }
+
+  &__dropdown-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: $color-black;
+    border-bottom: 1px solid transparent;
+    padding-top: 1.5rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $color-cyan;
+      border-bottom: 1px solid $color-cyan;
+    }
+  }
+}

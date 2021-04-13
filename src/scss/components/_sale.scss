@@ -1,0 +1,162 @@
+.sale {
+  margin-bottom: 3rem;
+
+  @include breakpoint(md) {
+    margin-bottom: 5rem;
+  }
+
+  &__heading-box {
+    margin-bottom: 2rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 1.5rem;
+
+    @include breakpoint(lg) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+  &__grid-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 1.5rem;
+
+    @include breakpoint(lg) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: 1px solid $color-gainsboro;
+    margin-bottom: 2.5rem;
+
+    @include breakpoint(lg) {
+      justify-content: space-between;
+    }
+
+    &:hover {
+      background-color: $color-white-smoke;
+    }
+  }
+
+  &__img-box {
+    position: relative;
+    margin-bottom: 2.2rem;
+    text-decoration: none;
+    overflow: hidden;
+  }
+
+  &__img {
+    display: block;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__banner {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: $color-white;
+    background-color: $color-magenta;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__favourite {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__heading {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $color-black;
+    margin-bottom: 2rem;
+  }
+
+  &__btn-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-social;
+    font-weight: bold;
+    border: 1px solid $color-social;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 0;
+    flex: 0 0 47%;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-social;
+    }
+
+    &:hover .sale__svg {
+      fill: $color-white;
+    }
+  }
+
+  &__svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: $color-social;
+    margin-left: 1rem;
+  }
+
+  &__svg-star {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: $color-tangerine;
+  }
+
+  &__bottom-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn-hollow {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $color-tangerine;
+    border: 1px solid $color-tangerine;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-tangerine;
+    }
+  }
+}

@@ -1,0 +1,228 @@
+.hero {
+  margin-bottom: 3rem;
+
+  @include breakpoint(md) {
+    margin-bottom: 5rem;
+  }
+
+  &__index-wrap {
+    background-color: $color-white;
+    background-color: $color-alice-blue;
+    margin-bottom: 3rem;
+  }
+
+  &__index-text {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 0.8rem 0;
+    display: inline-block;
+
+    &--black {
+      color: $color-black;
+      font-weight: bold;
+    }
+
+    &--gray {
+      color: $color-gray;
+    }
+  }
+
+  &__slash {
+    &--black {
+      color: $color-black;
+      font-weight: bold;
+    }
+
+    &--gray {
+      color: $color-gray;
+    }
+  }
+
+  &__heading-box {
+    margin-bottom: 2.3rem;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__side-menu {
+    display: flex;
+    flex-direction: column;
+    min-width: 25%;
+    max-height: 460px;
+    overflow-y: scroll;
+    border: 1px solid $color-gainsboro;
+
+    @include breakpoint(lg) {
+      min-width: 34%;
+    }
+
+    @include breakpoint(sm) {
+      display: none;
+    }
+  }
+
+  &__menu-heading {
+    text-decoration: none;
+    padding: 1.5rem;
+    border-bottom: 1px solid $color-gainsboro;
+    display: flex;
+    align-items: center;
+    color: $color-gray;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $color-dark-cerulean;
+    }
+    &:hover .hero__svg {
+      fill: $color-dark-cerulean;
+    }
+  }
+
+  &__menu-text {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__svg {
+    height: 2.2rem;
+    width: 2.2rem;
+    fill: $color-gray;
+    margin-left: auto;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__active {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  &__menu-list {
+    display: none;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-gainsboro;
+    }
+  }
+
+  &__menu-item {
+    list-style: none;
+
+    &:hover .nav__dropdown-content {
+      display: flex;
+    }
+  }
+
+  &__menu-link {
+    text-decoration: none;
+    color: $color-gray;
+    display: flex;
+    padding: 1.2rem;
+
+    &:hover {
+      background-color: $color-pattens;
+    }
+  }
+
+  &__img-box {
+    margin-left: 1.5rem;
+    position: relative;
+    max-width: 74.5%;
+    overflow: hidden;
+
+    @include breakpoint(lg) {
+      max-width: 66%;
+    }
+
+    @include breakpoint(sm) {
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+
+  &__img {
+    height: 46rem;
+    @include breakpoint(lg) {
+      object-fit: cover;
+    }
+  }
+
+  &__banner-box {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: transparent;
+    width: 40%;
+
+    @include breakpoint(xl) {
+      width: 50%;
+    }
+
+    @include breakpoint(lg) {
+      width: 52%;
+    }
+
+    @include breakpoint(md) {
+      top: 5%;
+      left: 25%;
+      width: 55%;
+    }
+  }
+
+  &__banner-heading {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: $color-white;
+    margin-bottom: 4.3rem;
+
+    @include breakpoint(lg) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__banner-text {
+    font-size: 1.8rem;
+    color: $color-white;
+    text-align: left;
+    margin-bottom: 3.5rem;
+
+    @include breakpoint(lg) {
+      margin-bottom: 2rem;
+    }
+
+    @include breakpoint(md) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__btn {
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background-color: rgba($color-white, 0.3);
+    border: 1px solid $color-white;
+    color: $color-white;
+    padding: 0.9rem 1.6rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: rgba($color-black, 0.4);
+    }
+
+    @include breakpoint(lg) {
+      background-color: rgba($color-black, 0.4);
+
+      &:hover {
+        background-color: rgba($color-black, 1);
+      }
+    }
+  }
+}

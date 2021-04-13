@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+     <link rel="stylesheet" href="css/style.css" /> 
+    <title>Lokring Product</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="container">
+        <div class="header__container">
+          <div class="header__logo-box">
+              <a href="index.html">
+            <img src="img/logo.png" alt="logo" class="header__logo">
+        </a>
+          </div>
+          <div class="header__form-wrapper"> 
+            <div class="social-box">
+              <a href="#" class="header__social-link">
+              <svg class="header__svg-social">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+              </a>
+              <a href="#" class="header__social-link">
+              <svg class="header__svg-social">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+              </a>
+              <a href="#" class="header__social-link">
+              <svg class="header__svg-social">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+              </a>
+              <a href="#" class="header__social-link">
+              <svg class="header__svg-social">
+                <use xlink:href="img/sprite.svg#icon-pinterest-square"></use>
+              </svg>
+              </a>
+              <a href="#" class="header__social-link">
+              <svg class="header__svg-social">
+                <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+              </svg>
+              </a>
+            </div>
+            <div class="header__search-box">
+              <button type="submit" class="header__search-btn">
+              <svg class="header__svg-search">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+              <input type="text" class="header__input" placeholder="Pretraga ...">
+            </div>
+          </div>
+          <div class="header__btn-wrapper">
+            <div class="header__btn-box-top">
+              <a href="#" class="header__btn-top">servis</a>
+              <a href="#" class="header__btn-top">kontakt</a>
+              <a href="#" class="header__btn-top">blog</a>
+            </div>
+            <div class="header__btn-box-bottom">         
+                <div class="header__breadcrumb " >
+                  <a class="header__btn-login" href="#">Login</a>
+                  <span class="header__slash">/</span>
+                  <a class="header__btn-login" href="#">Registracija</a>
+                </div>
+              <a href="#" class="header__btn-bottom">
+                Moja korpa
+                <svg class="header__svg-cart header__svg-cart--orange">
+                  <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
+                </svg>
+              </a>
+              <a href="#" class="header__btn-bottom">
+                Sviđanja
+                <svg class="header__svg-star header__svg-star--orange">
+                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  <span class="header__number">3</span>
+                </svg>
+                
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header__nav-container">
+        <button class="header__hamburger" title="Menu">
+          <svg class="header__hamburger-icon">
+            <use xlink:href="img/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <nav class="nav">
+          <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">tungalov rezni alat</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">mašine za obradu aluminijuma atex</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">cnc mašine microcat</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">tračne testere za metal kar metal</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">zavarivanje</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">alati i pribor</a></li>
+        </ul>
+        </nav>
+      </div>
+      </div>
+    </section>
+    <section class="form">
+        <div class="container">
+            <div class="form__container">
+                <div class="form__box-left">
+                    <div class="form__heading-box">
+                        <h2>Naručilac</h2>
+                    </div>
+                    <div class="form__row">
+                        <select name="User" id="type" class="form__select">
+                            <option value="Person"> Fizičko lice</option>
+                            <option value="Company"> Firma</option>
+                        </select>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__input-box">
+                            <label for="Name" class="form__label">Ime: </label>
+                            <input type="text" name="Name" class="form__input" >
+                        </div>
+                        <div class="form__input-box">
+                            <label for="Surname" class="form__label">Prezime:</label>
+                            <input type="text" name="Surname" class="form__input" >
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__input-box">
+                            <label for="zipCode" class="form__label">Poštanski broj: </label>
+                            <input type="text" name="zipCode" class="form__input" >
+                        </div>
+                        <div class="form__input-box">
+                            <label for="city" class="form__label">Grad:</label>
+                            <input type="text" name="city" class="form__input" >
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__input-box">
+                            <label for="adress" class="form__label">Adresa: </label>
+                            <input type="text" name="adress" class="form__input" >
+                        </div>
+                        <div class="form__input-box">
+                            <label for="country" class="form__label">Zemlja:</label>
+                            <input type="text" name="country" class="form__input" >
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__input-box">
+                            <label for="phone " class="form__label">Broj telefona: </label>
+                            <input type="text" name="phone" class="form__input" >
+                        </div>
+                        <div class="form__input-box">
+                            <label for="Email:" class="form__label">Email:</label>
+                            <input type="text" name="Email:" class="form__input" >
+                        </div>
+                    </div>
+                    <div class="form__heading-box">
+                        <h2>Dostava</h2>
+                    </div>
+                    <div class="form__check-box">
+                        <input name="useSameInfoShipping"  class="form__check" type="checkbox">
+                        <label class="form__check-label" for="useSameInfoShipping">
+                        Ukoliko želite da koristite istu adresu za dostavu
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__input-box">
+                            <label for="nameOfReciver" class="form__label">Ime i prezime kome se šalje </label>
+                            <input type="text" name="nameOfReciver" class="form__input" >
+                        </div>
+                        <div class="form__input-box">
+                            <label for="adressOfReciver" class="form__label">Adresa na koju se šalje</label>
+                            <input type="text" name="adressOfReciver" class="form__input" >
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__input-box">
+                            <label for="shippingCity" class="form__label">Grad u koji se šalje </label>
+                            <input type="text" name="shippingCity" class="form__input" >
+                        </div>
+                        <div class="form__input-box">
+                            <label for="zipCode:" class="form__label">Poštanski broj:</label>
+                            <input type="text" name="zipCode:" class="form__input" >
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__input-box">
+                            <label for="shippingCountry" class="form__label">Zemlja u koju se šalje: </label>
+                            <input type="text" name="shippingCountry" class="form__input" >
+                        </div>
+                    </div>
+                    <div class="form__heading-box">
+                        <h2>Napomena</h2>
+                    </div>
+                    <div class="form__row">
+                        <textarea name="note" id="note" class="form__textarea" placeholder="Ukoliko imate neki zahtev..."></textarea>
+                    </div>
+                </div>
+                <div class="form__box-right">
+                    <div class="form__heading-box">
+                        <h2>Izaberite način plaćanja</h2>
+                    </div>
+                    <div class="form__check-box">
+                        <input name="payment"  class="form__check" type="radio" checked>
+                        <label class="form__check-label" for="payment">
+                        Platna kartica
+                        <svg class="form__svg-info">
+                            <use xlink:href="img/sprite.svg#icon-info"></use>
+                          </svg>
+                        </label>
+                    </div>
+                    <div class="form__check-box">
+                        <input name="payment"  class="form__check" type="radio">
+                        <label class="form__check-label" for="payment">
+                        PayPal
+                        <svg class="form__svg-info">
+                            <use xlink:href="img/sprite.svg#icon-info"></use>
+                          </svg>
+                        </label>
+                    </div>
+                    <div class="form__check-box">
+                        <input name="payment"  class="form__check" type="radio">
+                        <label class="form__check-label" for="payment">
+                        Prilikom pouzeća
+                        <svg class="form__svg-info">
+                            <use xlink:href="img/sprite.svg#icon-info"></use>
+                          </svg>
+                        </label>
+                    </div>
+                    <div class="form__check-box">
+                        <input name="payment"  class="form__check" type="radio">
+                        <label class="form__check-label" for="payment">
+                        Preko fakture
+                        <svg class="form__svg-info">
+                            <use xlink:href="img/sprite.svg#icon-info"></use>
+                          </svg>
+                        </label>
+                    </div>
+                    <div class="form__heading-box">
+                        <h2>Vaša porudžbina</h2>
+                    </div>
+                    <div class="form__table">
+                            <div class="form__header-row">
+                                <span class="form__table-header">Proizvodi</span>
+                                <span class="form__table-header">Veličina</span>
+                                <span class="form__table-header">Količina</span>
+                                <span class="form__table-header">Cena sa popustom</span>
+                                <span class="form__table-header">Ukloni</span>
+                            </div>
+                                <div class="form__table-row">
+                                <span class="form__table-desc">Automatska tračna testera</span>
+                                <span class="form__table-desc text-align">XL</span>
+                                <span class="form__table-desc margin-right-xl">
+                                    <a href="#" class="form__qty-minus ">
+                                        <svg class="form__svg-minus">
+                                            <use xlink:href="img/sprite.svg#icon-minus"></use>
+                                          </svg>
+                                    </a>
+                                    <input type="text" class="form__qty" value="1">
+                                    <a href="#" class="form__qty-plus">
+                                        <svg class="form__svg-plus">
+                                            <use xlink:href="img/sprite.svg#icon-plus"></use>
+                                          </svg>
+                                    </a>
+                                </span>
+                                <span class="form__table-desc margin-right-xl">21600 rsd</span>
+                                <span class="form__table-data">
+                                    <a href="#" class="trash">
+                                        <svg class="form__svg-trash">
+                                            <use xlink:href="img/sprite.svg#icon-trashcan"></use>
+                                          </svg>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form__pdv">
+                            <span class="form__pdv-span">CENA SA PDV-OM</span>
+                            <span class="form__pdv-span">21600.00 rsd</span>
+                        </div>
+                        <div class="form__delivery">
+                            <span class="form__delivery-span">dostava</span>
+                            <div class="form__delivery-box">
+                                <span class="form__delivery-info">* Odaberi način dostave</span>
+                                <span class="form__delivery-info">Dostava za Srbiju:</span>
+                            </div>
+                            <div class="form__delivery-box">
+                                <div class="form__delivery-logo-box">
+                                <a href="#" class="form__delivery-logo-link">
+                                    <img src="img/DHL.png" alt="DHL Logo">
+                                </a>
+                                <a href="#" class="form__delivery-logo-link">
+                                    <img src="img/DHL.png" alt="DHL Logo">
+                                </a>
+                                <a href="#" class="form__delivery-logo-link">
+                                    <img src="img/DHL.png" alt="DHL Logo">
+                                </a>
+                            </div>
+                                <span class="form__delivery-price">800 rsd</span>
+                            </div>
+                        </div>
+                        <div class="form__total">
+                            <span class="form__total-span">ukupno za uplatu</span>
+                            <span class="form__total-price">21.900 rsd</span>
+                        </div>
+                        <div class="form__condition-box">
+                            <div class="form__condition-img-box">
+                            <img src="img/captcha_03.png" alt="Captcah">
+                        </div>
+                            <div class="form__check-wrapper">
+                                <input name="useSameInfoShipping"  class="form__check" type="checkbox">
+                                <label class="form__check-label" for="useSameInfoShipping">
+                                Prihvatam
+                                <a href="#" class="form__check-link">uslove kupovine</a>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__btn-box">
+                            <button class="form__btn form__btn--white">nazad na kupovinu</button>
+                            <button class="form__btn form__btn--blue">potvrdi kupovinu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<footer class="footer">
+    <div class="container">
+      <div class="footer__form">
+        <p class="footer__paragraph">Prijavite se na našu mailing listu</p>
+        <input type="text" class="footer__input" placeholder="Vaša email adresa">
+        <a href="#" class="footer__btn">prijava</a>
+      </div>
+      <div class="footer__heading-box">
+        <span class="footer__heading">lokring.doo</span>
+      </div>
+      <div class="footer__grid">
+        <div class="footer__card">
+          <div class="footer__location">
+            <svg class="footer__svg">
+              <use xlink:href="img/sprite.svg#icon-map-marker"></use>
+            </svg>
+            <p class="footer__text">
+              Miročka 4 <br>
+              11.000 Beograd <br>
+              Srbija
+            </p>
+          </div>
+          <div class="footer__phone">
+            <svg class="footer__svg">
+              <use xlink:href="img/sprite.svg#icon-phone-call"></use>
+            </svg>
+            <p class="footer__text">
+              011 3456 345 <br>
+              069 3456 789 
+            </p>
+          </div>
+          <div class="footer__mail-box">
+            <svg class="footer__svg">
+              <use xlink:href="img/sprite.svg#icon-envelope"></use>
+            </svg>
+            <a href="mailto:office@lokring.rs" class="footer__mail">
+              office@lokring.rs
+            </a>
+          </div>
+            <div class="footer__social-box">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__social-svg">
+                  <use
+                    xlink:href="img/sprite.svg#icon-facebook-with-circle"
+                  ></use>               
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg class="footer__social-svg">
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg class="footer__social-svg">
+                  <use xlink:href="img/sprite.svg#icon-pinterest-square"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg class="footer__social-svg">
+                  <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg class="footer__social-svg">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </div>
+        </div>
+        <div class="footer__card">
+          <a href="#" class="footer__item">servis za kupce</a>
+          <a href="#" class="footer__item">kontakt</a>
+          <a href="#" class="footer__item">blog</a>
+        </div>
+        <div class="footer__card">
+          <a href="#" class="footer__link">tungaloz rezni alati</a>
+          <a href="#" class="footer__link">mašine za obradu aluminijuma atex</a>
+          <a href="#" class="footer__link">cnc mašine microcat</a>
+          <a href="#" class="footer__link">tračne testere za metal kar-metal</a>
+          <a href="#" class="footer__link">zavarivanje</a>
+          <a href="#" class="footer__link">alati i pribor</a>
+        </div>
+        <div class="footer__card">
+          <p class="footer__item">podrška</p>
+          <div class="footer__banks">
+            <a href="#" class="footer__aik"><img src="img/aik-logo-green.png" alt="" class="footer__img"></a>
+            <a href="#" class="footer__visa"><img src="img/visa.png" alt="" class="footer__img"></a>
+            <a href="#" class="footer__master"><img src="img/mastercard.png" alt="" class="footer__img"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="footer__bottom">
+        <div class="container">
+        <div class="footer__row">
+          <a href="#" class="footer__bottom-link">Pravne informacije</a>
+          <a href="#" class="footer__bottom-link">Uslovi poslovanja</a>
+          <a href="#" class="footer__bottom-link">Politika kvaliteta</a>
+          <a href="#" class="footer__bottom-link">Rešavanje sporova</a>
+          <a href="#" class="footer__bottom-link">Dostupnost</a>
+          <a href="#" class="footer__bottom-link">Podešavanje kolačića</a>
+        </div>
+        <div class="footer__copyright">
+          <span class="footer__copyright-text">© Copyright 2020 VG By Bgsvetionik</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- <script src="js/tabs.js"></script> -->
+</body>
+</html> 
